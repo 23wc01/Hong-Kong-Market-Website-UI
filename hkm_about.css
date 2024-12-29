@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import "hkm_navbar.css";
+
+/*
+  Hong Kong Market store website - Layout Style Sheet for About Page
+  Authors: Austin Parson & Wen-Hsin Chen
+  Date: 2/23/2023
+Filename: hkm_about.css
+*/
+/* General font */
+@font-face {
+  font-family: hkmFont;
+  src: url(AveriaGruesaLibre-Regular.ttf);
+}
+html {
+  font-family: hkmFont, sans-serif;
+}
+
+/* Intro section Style */
+.intro {
+  background-image: url("images/other/shopping2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  color: white;
+  text-shadow: 5px 1px 5px gray;
+}
+.intro h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  text-align: center;
+  padding: 5%;
+}
+
+/* Table Styles */
+img {
+  float: right;
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+}
+
+table {
+  margin: 5% auto; 
+  border-collapse: collapse;
+  width: 50%;
+}
+td {
+	word-wrap: break-word;
+}
+.owners {
+	text-align: right;
+}
+th.owners {
+	width: 25%;
+  height: 100px;
+}
+th.logo {
+	width: 25%;
+  height: 100px;
+}
+th.description {
+	width: 25%;
+  height: 100px;
+}
+th.description {
+	width: 25%;
+  height: 100px;
+}
+th {
+	font-weight: normal;
+}
+#target {
+  font-size: 4em;
+  color: rgb(214,40,40);
+  text-align: center;
+}
+#tag {
+  font-size: 5em;
+  color: rgb(214,40,40);
+  text-align: center;
+}
+#bags {
+  font-size: 10em;
+  color: rgb(214,40,40);
+  text-align: center;
+}
+#plane {
+  font-size: 7em;
+  color: rgb(214,40,40);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  text-align: center;
+}
+
+/* Article styles */
+article {
+  background-image: url("images/other/farmer.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 5px 1px 5px gray;
+  min-height: 110vh;
+}
+article h1 {
+  font-size: 4em;
+  text-align: left;
+  padding: 4%;
+}
+article p {
+  font-size: 2em;
+  padding: 2%;
+  margin: auto;
+}
+
+/* Audio and Video Player Styles */
+video {
+   filter: drop-shadow(8px 8px 15px rgb(51, 51,51));
+   display: block;
+   margin: 6% auto;
+   width: 50%;  
+}
+
+table.list {
+   background: white;
+   border: 20px double rgb(252, 191 ,73);
+   border-collapse: collapse;
+   font-size: 2em;
+   width: 100%;
+}
+
+/* ===============================
+  Mobile Devices: 0 to 480px 
+  ===============================
+*/
+@media only screen and (max-width: 480px) {
+  .intro h1 {
+    position: static;
+    transform: none;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 5px 1px 5px rgb(252, 191 ,73);
+  }
+  video {
+    filter: drop-shadow(8px 8px 15px rgb(51, 51,51));
+    width: 100%; 
+  }
+  article p {
+    font-size: 1.5em;
+    padding: 2%;
+    margin: 2%;
+  }
+}

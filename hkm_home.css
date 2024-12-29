@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import "hkm_navbar.css";
+
+/*
+  Hong Kong Market store website - Layout Style Sheet for Home Page
+  Authors: Austin Parson & Wen-Hsin Chen
+  Date: 2/23/2023
+Filename: hkm_home.css
+*/
+
+/* General font */
+@font-face {
+  font-family: hkmFont;
+  src: url(AveriaGruesaLibre-Regular.ttf);
+}
+html {
+  font-family: hkmFont, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Intro Section styling*/
+.intro {
+  background-image: url("images/other/lanterns.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  text-align: right;
+  margin-top: 25%;
+  margin-right: 5%;
+  text-shadow: 5px 1px 5px rgb(252,191,73);
+}
+header > div#explore {
+  float: left;
+  font-size: 4em;
+  margin: 10% auto;
+}
+div#explore h2 {
+  font-size: 1.2em;
+  margin-left: 2%;
+  padding: 4%;
+}
+
+header > p {
+  float: left;  
+  font-size: 1.5em;
+  margin: 15% auto;
+  line-height: 1em;
+  width: 50%;
+}
+header > p:first-of-type::first-letter { 
+  font-size: 2.6em; 
+  float: left; 
+  line-height: 0.4;
+}
+header > p::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Map Styles */
+figure img {
+  margin: 0% 20%;
+  width: 1039px;
+}
+figure figcaption {
+  text-align: center;
+  margin: 3% auto;
+  font-size: 2em;
+}
+
+/* Product type gallery Styles */
+section.gallery {
+  text-align: center;
+  display: inline-block;
+  border: 0.5px solid lightgray;
+  box-shadow: -3px 15px 20px rgb(0, 0, 0, 0.2);
+  margin: 5%;
+  margin-top: 2%;
+}
+section.gallery img {
+  width: 250px;
+  height: 250px;
+  margin: 1%;
+}
+
+/* Product type Styles */
+section.type {
+  border: 0.5px solid lightgray;
+  box-shadow: -3px 15px 15px rgb(0, 0, 0, 0.2);
+  padding: 10%;
+  margin: 5% 2%;
+}
+/*Lights up when user jumps to it*/
+section.type:target {
+   box-shadow: 3px 15px 15px rgb(252,191,73);
+}
+section.type h2, h3, p, img {
+  width: 50%;
+  line-height: 1.2em;
+}
+section.type h2 {
+  font-size: 2.5em;
+  padding: 0.5em 0em;
+}
+section.type h3 {
+  font-size: 1.8em;
+}
+section.type p {
+  font-size: 1.2em;
+}
+
+section.type img {
+  float: right;
+  object-fit: cover;
+  width: 300px;
+  padding-bottom: 4%;
+}
+
+/* For links that isn't in the <p> */
+section.type a:not(.normal) {
+  font-size: 1.5em;
+  margin: 25%;
+}
+/* ===============================
+  Mobile Devices: 0 to 480px 
+  ===============================
+*/
+@media only screen and (max-width: 480px) {
+  figure#map {
+     display: none;
+  }
+  .intro > h1 {
+    text-align: center;
+    font-size: 5em;
+  }
+  header > p {
+    text-align: center;
+    margin-left: 20%;
+  }
+  header > p:first-of-type::first-letter { 
+    font-size: 2.5em; 
+    line-height: 0.5em;
+  }
+  /* For links that isn't in the <p> */
+  section.type a:not(.normal) {
+    font-size: 1.5em;
+    margin: 20%;
+  }
+}

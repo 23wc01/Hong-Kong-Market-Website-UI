@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import "hkm_navbar.css";
+
+/*
+  Hong Kong Market store website - Layout Style Sheet for Contact Page
+  Authors: Austin Parson & Wen-Hsin Chen
+  Date: 2/23/2023
+Filename: hkm_contact.css
+*/
+
+/* General font */
+@font-face {
+  font-family: hkmFont;
+  src: url(AveriaGruesaLibre-Regular.ttf);
+}
+
+html {
+  font-family: hkmFont, sans-serif;
+}
+
+/* Page color */
+html {
+  background-color: rgb(214,40,40);
+}
+
+/* Info sections styling */
+.info {
+  text-align: center;
+}
+.info > section {
+  background-color: rgb(252, 191 ,73);
+  display: inline-block;
+  text-align: center;
+  margin: 4%;
+  padding: 2%;
+  box-shadow: -20px -10px rgb(0,0,0,0.4);
+  width: 250px;
+  height: 250px;
+  vertical-align: top;
+}
+.info > section h2 {  
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-shadow: -4px 2px rgb(247,127,0);
+}
+.info > section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+div#phone {
+  color:rgb(247,127,0);
+  font-size: 9em;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+div#thumb {
+  color:rgb(247,127,0);
+  font-size: 9em;
+}
+/* form styles*/
+form {
+  background-color: rgb(234,226,183);
+  box-shadow: -10px -10px rgb(0,0,0,0.4);
+  background-image: url("images/other/email.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  padding: 1%;
+  width: 40%;
+  text-align: center; 
+}
+form > h1 {
+  font-size: 4em;
+  text-align: center;
+  padding: 5%;
+  color: white;
+  text-shadow: 5px 1px 5px rgb(252, 191 ,73);
+}
+label {
+  font-size: 1.5em;
+  color: white;
+}
+input[type=email] {
+  border: none;
+  padding: 2%;
+  border-bottom: 2px solid white;
+  background-color: rgb(255,255,255,0);
+}
+textarea {
+  padding: 2%;
+  background-color: rgb(255,255,255,0.2);
+  border: 3px solid white;
+  border-radius: 4px;
+  color: black;
+  width: 90%;
+  font-size: 1.2em;
+}
+input[type=submit]{
+  background-color: rgb(214,40,40);
+  border: 2px solid white ;
+  border-radius: 4px;
+  color: white;
+  padding: 2%;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+  form {
+    background-color: rgb(234,226,183);
+    box-shadow: -10px -10px rgb(0,0,0,0.4);
+    background-image: url("images/other/email.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+  }
+}

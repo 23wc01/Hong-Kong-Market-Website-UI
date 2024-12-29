@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Contact Page for Hong Kong Market
+    Author: Austin Parson & Wen-Hsin Chen
+    Date:  2/23/2023 
+  
+    Filename: hkm_contact.html
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hong Kong Market</title>
+  <link href="hkm_reset.css" rel="stylesheet" />
+  <link href="hkm_contact.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+    <nav>
+      <a id="navicon" href="#"><img src="hkm_navicon.png" alt="" /></a>
+      <ul>         
+        <li><a href="hkm_about.html#about"><img src="images/other/hkm_logo.jpg" alt="Ato Bert Logo" /></a></li>           
+        <li><a href="hkm_home.html">Home</a></li> 
+        <li><a href="hkm_about.html">About</a></li>
+        <li><a href="hkm_location.html">Location</a></li>
+        <li><a href="hkm_contact.html">Contact</a></li>
+        <li class="dropdown">
+          <button>Products<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown_choices">
+            <a href="hkm_food.html">Food</a>
+            <a href="hkm_non_food.html">Non-food</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="info">
+    <section>
+      <h2>PHONE</h2>
+      <p><a href="tel:+15734742878">(573)474-2878</a>
+      <br><div id="phone">&#9990;</div>
+      </p>
+    </section>
+    <section>
+    <h2>SOCIAL</h2>
+      <p><a href="https://m.facebook.com/HKMCOMO/">Facebook</a>
+      <br><div id="thumb">&#128402;</div>
+      </p>
+    </section>
+    <section>
+      <h2>HOURS</h2>
+      <p>Mon &#126; Sat... 
+        <br><i>9AM - 7PM</i>
+        <br>Sun... 
+        <br><i>10:30AM - 6:30PM</i>
+      </p>
+    </section>
+    <section>
+        <h2>DAYS</h2>
+        <p>Open year-round&ast;
+        <br>&ast;Thanksgivings and Christmas Day... 
+        <br><i>9AM - 6PM</i></p>
+    </section> 
+  </section>
+  <form>
+    <h1>Let's Talk</h1>
+  	<label fpr="email">Your Email</label><br>
+    <input type="email" id="email" name="email" placeholder="address@email.com" pattern="*@.*.com">
+    <br><br>
+    <textarea name="content" cols="90" rows="10" placeholder="Your email questions"></textarea>
+    <br>
+  <input type="submit" value="SEND">
+  </form>
+</body>
+</html>

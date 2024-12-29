@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*
+  Hong Kong Market store website - Layout Style Sheet for Navbar
+  Authors: Austin Parson & Wen-Hsin Chen
+  Date: 2/23/2023
+Filename: hkm_navbar.css
+*/
+
+/* navbar styling */
+nav {
+  position: 0px 0px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/*navbar links styling */
+nav a {
+  float: right;
+  font-size: 2em;
+  padding: 0.5em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav img {
+  width: 1.2em;
+  height: 1.2em;
+  padding: 0;
+}
+/*navbar dropdown styling */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown button {
+  margin: 0;
+  padding: 0.5em;
+  font-size: 2em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+}
+nav a:hover, .dropdown:hover button 
+{
+  background-color: rgb(214,40,40, 0.7);
+}
+
+.dropdown_choices {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  min-width: 160px;
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.dropdown_choices a {
+  float: none;
+  color: white;
+  padding: 0.5em;
+  display: block;
+  text-align: left;
+}
+
+.dropdown_choices a:hover {
+  background-color: rgb(234,226,183,0.7);
+}
+
+.dropdown:hover .dropdown_choices {
+  display: block;
+}
+
+
+/* Styles used to control a navicon menu. */
+/* ===========
+   Base Styles
+   ===========
+*/
+a#navicon {
+   display: none;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+   a#navicon {
+      display: block;
+   }
+   nav {
+    text-align: center;
+   }
+   nav ul {
+      display: none;
+   }
+   a#navicon:hover+ul, nav ul:hover {
+      display: inline-block;
+      font-size: 0.8em;
+   }
+}

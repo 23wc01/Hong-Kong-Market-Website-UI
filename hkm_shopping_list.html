@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Non-Food Products Page for Hong Kong Market
+    Author: Austin Parson & Wen-Hsin Chen
+    Date:  2/23/2023 
+  
+    Filename: hkm_non_food.html
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hong Kong Market</title>
+  <link href="hkm_reset.css" rel="stylesheet" />
+  <link href="hkm_shopping_list.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="intro">
+    <header>
+      <nav>
+        <a id="navicon" href="#"><img src="hkm_navicon.png" alt="" /></a>
+        <ul>         
+          <li><a href="hkm_about.html#about"><img src="images/other/hkm_logo.jpg" alt="Ato Bert Logo" /></a></li> 
+          <li><a href="hkm_home.html">Home</a></li>
+          <li><a href="hkm_about.html">About</a></li>
+          <li><a href="hkm_location.html">Location</a></li>
+          <li><a href="hkm_contact.html">Contact</a></li>
+          <li class="dropdown">
+            <button>Products<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown_choices">
+              <a href="hkm_food.html">Food</a>
+              <a href="hkm_non_food.html">Non-food</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Your shopping list</h1>
+    <p>Never forget what to buy again!
+    </p>
+    <table class="list">
+      <caption>*Items here will still need to be bought at our brick-and-mortar store. This only serves as a checklist.</caption>
+      <colgroup>
+        <col id="firstCol" />
+        <col class="checkmarks" span="1" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Purchased</th>
+          <th>Product</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><input type="checkbox"></th>
+          <td>Boba tea</td>
+        </tr>
+        <tr>
+          <th><input type="checkbox"></th>
+          <td>Matcha Kit Kat</td>
+        </tr>
+        <tr>
+          <th><input type="checkbox"></th>
+          <td>Dried seaweed</td>
+        </tr>
+        <tr>
+          <th><input type="checkbox"></th>
+          <td>Durian</td>
+        </tr>
+    </table>
+  </section>
+</body>
+
+</html>

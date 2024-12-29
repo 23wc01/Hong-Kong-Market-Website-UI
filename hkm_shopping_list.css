@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import "hkm_navbar.css";
+
+/*
+  Hong Kong Market store website - Layout Style Sheet for Shopping List Page
+  Authors: Austin Parson & Wen-Hsin Chen
+  Date: 2/23/2023
+Filename: hkm_shopping_list.css
+*/
+
+/* General font */
+@font-face {
+  font-family: hkmFont;
+  src: url(AveriaGruesaLibre-Regular.ttf);
+}
+
+html {
+  font-family: hkmFont, sans-serif;
+}
+
+/*Section styling*/
+.intro {
+  background-image: url("images/other/shopping1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 5px 1px 5px gray;
+  min-height: 80vh;
+}
+
+.intro h1 p {
+  padding: 5%;
+  margin: auto;
+}
+
+.intro h1 {
+  font-size: 4em;
+  text-align: right;
+  padding: 5%;
+}
+
+.intro p {
+  font-size: 2em;
+  text-align: right;
+  padding: 5%;
+}
+
+/* Table Styles */
+table.list {
+   background: white;
+   border: 20px double rgb(252, 191 ,73);
+   border-collapse: collapse;
+   font-size: 2em;
+   width: 100%;
+}
+
+
+/* Table Cell Styles */
+table.list th, table.list td {
+   border-left: 2px solid rgb(252, 191 ,73);
+   padding: 5px;
+   vertical-align: top;
+}
+
+
+/* Table Caption Styles */
+caption {
+   caption-side: bottom;
+   text-align: left;
+  font-size: 0.7em;
+}
+
+
+/* Row Group Styles */
+tbody tr:nth-of-type(odd) {
+  background: lightgray;
+}
+
+tbody tr:nth-of-type(even) {
+  background: white;
+}
+
+table.list thead {
+   background: rgb(214, 40, 40);
+   color: white;
+}
+
+table.list thead tr th {
+	height: 30px;
+  color: white;
+}
+
+table.list td {
+  color: black;
+  text-align: center;
+}
+
+input {
+  width: 2em;
+  height: 2em;
+}
+
+/* ===============================
+  Mobile Devices: 0 to 480px 
+  ===============================
+*/
+@media only screen and (max-width: 480px) {
+  figure#map {
+     display: none;
+  }
+  table.list {
+    background: white;
+    border: 10px double rgb(252, 191 ,73);
+    border-collapse: collapse;
+    font-size: 1.5em;
+    width: 100%;
+ }
+}

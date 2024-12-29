@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import "hkm_navbar.css";
+
+/*
+  Hong Kong Market store website - Layout Style Sheet for Location Page
+  Authors: Austin Parson & Wen-Hsin Chen
+  Date: 2/23/2023
+Filename: hkm_location.css
+*/
+/* General font */
+@font-face {
+  font-family: hkmFont;
+  src: url(AveriaGruesaLibre-Regular.ttf);
+}
+html {
+  font-family: hkmFont, sans-serif;
+}
+
+/* Page colors */
+html {
+  background-color: rgb(214,40,40);
+  color: black;
+}
+
+/* Hkm image & label styles */
+section {
+  background-color: rgb(234, 226, 183);
+  margin: 5%;
+  width: 50%;
+  float: left;
+  padding-bottom: 2%;
+  box-shadow: 3px 15px 15px rgb(0 0 0 / 0.2);
+}
+img#hkm {
+  width: 100%;
+}
+section h2, p, address {
+  padding: 1% 10%;
+  font-size: 1.5em;
+}
+section h2 {
+  text-align: right;
+  font-size: 2em;
+  margin-top: 8%;
+}
+section address {
+  background-color: rgb(247,127,0, 0.4);
+  color: white;
+  margin: 2% 35% 2% 10%;
+}
+
+/* Google Maps styles */
+figure#google {
+  float: left;
+  text-align: center;
+  width: 40%;
+  margin-top: 9%;
+  padding-right: 0.1%;
+  padding-top: 1%;
+  background-color: rgb(234, 226, 183);
+  box-shadow: 3px 15px 15px rgb(0 0 0 / 0.2);
+}
+figure#google figcaption {
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+/* Map styles*/
+figure#map {
+  background-color: rgb(234, 226, 183);
+  box-shadow: 3px 15px 15px rgb(0 0 0 / 0.2);
+  margin: 10%;
+  text-align: center;
+  width: 1039px;
+}
+figure#map img {
+  width: 100%;
+}
+figure#map figcaption {
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+/* ===============================
+  Mobile Devices: 0 to 480px 
+  ===============================
+*/
+@media only screen and (max-width: 480px) {
+  figure#map {
+     display: none;
+  }
+  section {
+    width: 100%;
+    margin-top: 10%;
+    margin: 0em;
+  }
+  section address {
+    margin: 2% 10%;
+  }
+  figure#google {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
